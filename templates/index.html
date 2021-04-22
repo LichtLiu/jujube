@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+
+<head>
+    {% include 'head.html' %}
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        {% include 'header.html' %}
+
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+            <div class="carousel-inner" role="listbox">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="{% static 'assets/img/slide/slide-1.jpg' %}" alt="">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown"> 歡迎來到 <span>阿發伯棗子園</span></h2>
+                            <p class="animate__animated animate__fadeInUp">阿發伯的棗子園
+                                阿發伯騎著那台老歐兜麥，停在田野間的農業邊道上，看著老伴穿梭在田裡，滿足的看著那耕種了，四十幾年的土地，心思回到了過去…………。
+                                阿發伯生長在貧困的家庭，有著好幾個弟妹要養，沒讀書的他，跟父親兩人為人工作，辛苦的養大了弟妹，退伍後結婚生子，生活艱困的養大三名兒女，好不容易掙了點錢，買了一塊農地，開始了務農的工作，一開始摸索中，吃了不少苦頭，還曾血本無歸過，好不容易從失敗中，學習到了經驗，一點一滴的種植出了，既清甜又青翠的棗子。
+                                雖然年紀已經八十多了，但是為了能夠將棗子傳承給孩子，還不能放下這塊用血汗灌溉的土地。</p>
+                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="{% static 'assets/img/slide/slide-2.jpg' %}" alt="">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown">棗園歷程</h2>
+                            <p class="animate__animated animate__fadeInUp">棗樹有品種之分，阿發伯的棗子園，種植了兩種棗樹，一種是過年前採收的「帝王棗」，一種是過年後採收的「珍蜜棗」，而「珍蜜棗」也有個偏名叫「爆汁蜜棗」，因為多汁而得其名。
+                                「帝王棗」身形橢圓尖頭，因果實飽滿大顆而得名，是過年前送禮偏愛的水果之一，果實大顆美觀外，顏色色澤青翠頗為誘人，口感也紮實甜美，所以成為年前送禮人的偏好，也有特製成禮盒，專為送禮製作。
+                                「珍蜜棗」外型像青蘋果一樣較圓，如它的偏名「爆汁蜜棗」一般，一咬下，那水分多到會噴汁，皮薄清脆汁多甜蜜，削皮後吃，口感如水梨般的多汁甜美，只是這種棗子，因照顧不易，外皮比較沒那麼青翠，且量產上比較少，一般市場上，比較看不到，因為沒那麼多的果實販售，但是它多汁清甜的美味，吃過後總叫人念念不忘。</p>
+                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+
+        </div>
+    </section><!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="row content">
+                    <div class="col-lg-6">
+                        <h2>棗園歷程</h2>
+                        <h3>小兒子前兩年警察退休後，便跟著父母親，一起投入心力在這塊土地上</h3>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <p>
+                            棗子一年才能收成一次，等於得花一年的心力，去栽培去照顧它，耗費了心力與投資的成本以外，還得看老天給不給飯吃，也許一個颱風，一陣子的大雨，就枉費了一年的苦心。
+                            種植棗樹得等樹苗穩固了，才能有機會收成，那公樹枝的枝幹又粗，還有著尖銳厚粗的硬刺，每每搞得人傷痕纍纍，從一開始的剪樹枝插枝開始，澆水填土堆肥除草防治蟲害，是免不了的，當它開花時，還要做引讓它授粉，當看到一顆顆的小果子，便要把較差的果子篩剪掉，留下比較好的果實，讓它長得更好更大，接著要用有機肥施肥，再用黑糖酵素，幫助它吸收，讓它的果實能更清脆甜美，收成完後，把所有上枝幹的棗樹枝砍掉，碾碎後，做為最天然的肥料，為下次收成做開始的準備。
+                        </p>
+                        <ul>
+                            <li><i class="ri-check-double-line"></i>每顆親自現摘挑選</li>
+                            <li><i class="ri-check-double-line"></i>親自做到品質把關</li>
+                            <li><i class="ri-check-double-line"></i>還原最原始的價格，無中盤商的剝削</li>
+                        </ul>
+                        <p class="font-italic">
+                            辛勤的耕耘，就是為了每年最豐碩的果實
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End About Section -->
+
+
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="icon-box">
+                            <i class="bi bi-briefcase"></i>
+                            <h4><a href="#">每日耕耘</a></h4>
+                            <p>每日耕耘</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="bi bi-card-checklist"></i>
+                            <h4><a href="#">細心栽種</a></h4>
+                            <p>細心栽種</p>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="bi bi-bar-chart"></i>
+                            <h4><a href="#">Sed ut perspiciatis</a></h4>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="bi bi-binoculars"></i>
+                            <h4><a href="#">Nemo E</a></h4>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </div>
+                    </div> -->
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="bi bi-brightness-high"></i>
+                            <h4><a href="#">氣候優良</a></h4>
+                            <p>氣候優良</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="bi bi-calendar4-week"></i>
+                            <h4><a href="#">順應產期</a></h4>
+                            <p>每年一、二月收成</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Services Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-app">App</li>
+                            <li data-filter=".filter-card">Card</li>
+                            <li data-filter=".filter-web">Web</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row portfolio-container">
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 1</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Web 3</h4>
+                                <p>Web</p>
+                                <div class="portfolio-links">
+                                    <a href="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 2</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Card 2</h4>
+                                <p>Card</p>
+                                <div class="portfolio-links">
+                                    <a href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Web 2</h4>
+                                <p>Web</p>
+                                <div class="portfolio-links">
+                                    <a href="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="{% static 'assets/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 3</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="{% static 'assets/img/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="{% static 'assets/img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Card 1</h4>
+                                <p>Card</p>
+                                <div class="portfolio-links">
+                                    <a href="{% static 'assets/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-wrap">
+                            <img src="{% static 'assets/img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Card 3</h4>
+                                <p>Card</p>
+                                <div class="portfolio-links">
+                                    <a href="{% static 'assets/img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="{% static 'assets/img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Web 3</h4>
+                                <p>Web</p>
+                                <div class="portfolio-links">
+                                    <a href="{% static 'assets/img/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                    <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Portfolio Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        {% include 'footer.html' %}
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
